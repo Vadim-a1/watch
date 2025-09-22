@@ -28,39 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             button1 = new Button();
             button2 = new Button();
             SuspendLayout();
             // 
-            // textBox1
-            // 
-            textBox1.BackColor = SystemColors.ScrollBar;
-            textBox1.Location = new Point(280, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(199, 23);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "HOLLOW KNIGHT ";
-            textBox1.TextAlign = HorizontalAlignment.Center;
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
             // button1
             // 
-            button1.Location = new Point(39, 175);
+            button1.BackColor = Color.Transparent;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Arial", 36F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button1.ForeColor = Color.Goldenrod;
+            button1.Location = new Point(-2, 113);
             button1.Name = "button1";
-            button1.Size = new Size(132, 46);
+            button1.Size = new Size(195, 82);
             button1.TabIndex = 1;
             button1.Text = "PLAY";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(39, 263);
+            button2.BackColor = Color.Transparent;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Arial", 36F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            button2.ForeColor = Color.Goldenrod;
+            button2.Location = new Point(-2, 201);
             button2.Name = "button2";
-            button2.Size = new Size(132, 46);
+            button2.Size = new Size(195, 82);
             button2.TabIndex = 2;
             button2.Text = "EXIT";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // Form2
@@ -68,19 +72,17 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(716, 410);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox1);
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private TextBox textBox1;
         private Button button1;
         private Button button2;
     }
