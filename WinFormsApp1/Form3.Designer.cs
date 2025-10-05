@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             label1 = new Label();
             button2 = new Button();
             button1 = new Button();
             button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -94,13 +94,31 @@
             button3.Text = "Warrior";
             button3.UseVisualStyleBackColor = false;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.Transparent;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button4.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button4.ForeColor = Color.DarkGray;
+            button4.Location = new Point(12, 31);
+            button4.Name = "button4";
+            button4.Size = new Size(138, 49);
+            button4.TabIndex = 5;
+            button4.Text = "Back";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.Выбор_Персонажа_в_Храме;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button1);
             Controls.Add(button2);
@@ -117,5 +135,6 @@
         private Button button2;
         private Button button1;
         private Button button3;
+        private Button button4;
     }
 }

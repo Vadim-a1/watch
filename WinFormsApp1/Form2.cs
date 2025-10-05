@@ -30,6 +30,8 @@ namespace WinFormsApp1
             button2.FlatAppearance.MouseDownBackColor = Color.Transparent; // Прозрачный фон при нажатии
 
             button2.FlatStyle = FlatStyle.Flat; // Плоский стиль кнопки
+            Application.Exit();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
