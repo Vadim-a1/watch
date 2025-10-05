@@ -143,9 +143,39 @@ namespace WinFormsApp1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Выбор_Персонажа_в_Храме {
+            get {
+                object obj = ResourceManager.GetObject("Выбор Персонажа в Храме", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ГЛАВНЫЙ_ФОН {
             get {
                 object obj = ResourceManager.GetObject("ГЛАВНЫЙ ФОН", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap лучник_характер {
+            get {
+                object obj = ResourceManager.GetObject("лучник_характер", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap лучник_характер1 {
+            get {
+                object obj = ResourceManager.GetObject("лучник_характер1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

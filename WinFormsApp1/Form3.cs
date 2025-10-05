@@ -37,17 +37,28 @@ namespace WinFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            Form f6 = new Form4();
+            f6.Show();
+            this.Hide();
+
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
-            Form f4 = new Form1();
+            Form f4 = new mage_char();
             f4.Show();
             this.Hide();
-            
 
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form f5 = new Form2();
+            f5.Show();
+            this.Hide();
         }
     }
 }

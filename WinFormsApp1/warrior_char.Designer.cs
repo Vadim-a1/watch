@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class mage_char
+    partial class warrior_char
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mage_char));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(warrior_char));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             button4 = new Button();
@@ -42,15 +42,15 @@
             // 
             // tabControl1
             // 
-            tabControl1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
+            tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(800, 450);
-            tabControl1.TabIndex = 0;
+            tabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
@@ -65,7 +65,6 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Характеристики";
             tabPage1.UseVisualStyleBackColor = true;
-            tabPage1.Click += tabPage1_Click;
             // 
             // button4
             // 
@@ -82,7 +81,6 @@
             button4.TabIndex = 6;
             button4.Text = "Back";
             button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
             // 
             // textBox1
             // 
@@ -90,13 +88,12 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Ink Free", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             textBox1.ForeColor = Color.Crimson;
-            textBox1.Location = new Point(22, 23);
+            textBox1.Location = new Point(8, 6);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(214, 322);
+            textBox1.Size = new Size(214, 390);
             textBox1.TabIndex = 1;
-            textBox1.Text = "Класс:\U0001f9d9 Маг\r\n\r\nИмя: Аркалис\r\n\r\nСила: 4\r\n\r\nЛовкость: 6\r\n\r\nИнтеллект: 15\r\n\r\nХП: 8\r\n\r\n";
-            textBox1.TextChanged += textBox1_TextChanged;
+            textBox1.Text = "Класс: ⚔️ Воин\r\n\r\nИмя: Аркалис\r\n\r\nСила: 15\r\n\r\nЛовкость: 8\r\n\r\nИнтеллект: 4\r\n\r\nХП: 12\r\n";
             // 
             // tabPage2
             // 
@@ -111,7 +108,6 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "История персонажа";
             tabPage2.UseVisualStyleBackColor = true;
-            tabPage2.Click += tabPage2_Click;
             // 
             // textBox2
             // 
@@ -127,16 +123,14 @@
             textBox2.Text = resources.GetString("textBox2.Text");
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
-            // mage_char
+            // warrior_char
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.маг_характер;
             ClientSize = new Size(800, 450);
             Controls.Add(tabControl1);
-            Name = "mage_char";
-            Text = "mage";
-            Load += Form1_Load;
+            Name = "warrior_char";
+            Text = "warrior_char";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
@@ -149,9 +143,9 @@
 
         private TabControl tabControl1;
         private TabPage tabPage1;
-        private TabPage tabPage2;
-        private TextBox textBox1;
-        private TextBox textBox2;
         private Button button4;
+        private TextBox textBox1;
+        private TabPage tabPage2;
+        private TextBox textBox2;
     }
 }
