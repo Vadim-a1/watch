@@ -73,10 +73,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(716, 410);
+            ClientSize = new Size(729, 413);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += Form2_Load;
             ResumeLayout(false);

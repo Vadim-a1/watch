@@ -1,65 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WinFormsApp1
+﻿namespace WinFormsApp1
 {
-    internal class Person
+    // Абстрактный базовый класс
+    internal abstract class Person
     {
-        private string Name;
-        private int Level;
-        private int health;
-        private int damage;
-        private int Max_health;
+        public string Name { get; protected set; }
+        public int Level { get; protected set; }
+        public int Health { get; protected set; }
+        public int MaxHealth { get; protected set; }
+        public int Damage { get; protected set; }
+        public bool IsAlive => Health > 0;
 
-
-        // создание персонажа
-        public Person(string Name, int level = 1)
+        public Person(string name, int level = 1)
         {
-            this.Name = Name;
-            this.Level = level;
-            this.health = Max_health;
-            damage = 5;
-            
-
+            Name = name;
+            Level = level;
         }
-        public void take_damage(int damage)
+
+        // Абстрактный метод - должен быть реализован в наследниках
+        public abstract void UseSpecialAbility();
+
+        // Виртуальный метод - может быть переопределен в наследниках
+        public virtual void TakeDamage(int damage)
         {
-            health = health - damage;
-            if (health < 0)
+            Health = Math.Max(0, Health - damage);
+            Console.WriteLine($"{Name} получает {damage} урона. Здоровье: {Health}/{MaxHealth}");
+
+            if (!IsAlive)
             {
-                health = 0;
+                Console.WriteLine($"{Name} повержен! 💀");
             }
-            Console.WriteLine($"{Name} получает {damage} урона.");
         }
 
-        public void get_health(int value)
+        public virtual void Attack(Person target)
         {
-            health += value;
-            if (health > Max_health)
-            {
-                health = Max_health;
-            }
-            Console.WriteLine($"{Name} лечится на {value}");
-
+            Console.WriteLine($"{Name} атакует {target.Name} и наносит {Damage} урона! ⚔️");
+            target.TakeDamage(Damage);
         }
-        public void Level_Up()
+
+        public void Heal(int amount)
         {
-            Level++;
-            Max_health += 10;
-            damage += 5;
-            health = Max_health;
-            Console.WriteLine($"{Name} повысил уровень до {Level}");
-            Console.WriteLine($"теперь у него {Max_health} здоровья и {damage} урона") ;
-
-
+            Health = Math.Min(MaxHealth, Health + amount);
+            Console.WriteLine($"{Name} восстанавливает {amount} здоровья. Теперь: {Health}/{MaxHealth}");
         }
-        public void attack(string Person, string target)
-        {
-            Console.WriteLine($"{Person} атакует {target}");
-        }
-
     }
 }

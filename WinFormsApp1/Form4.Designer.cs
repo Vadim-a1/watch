@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            button4 = new Button();
             textBox1 = new TextBox();
             tabPage2 = new TabPage();
             textBox2 = new TextBox();
-            button4 = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -49,7 +49,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(800, 450);
+            tabControl1.Size = new Size(934, 511);
             tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -61,11 +61,28 @@
             tabPage1.Location = new Point(4, 27);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(792, 419);
+            tabPage1.Size = new Size(926, 480);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Характеристики";
             tabPage1.UseVisualStyleBackColor = true;
             tabPage1.Click += tabPage1_Click_2;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.Transparent;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button4.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button4.ForeColor = Color.DarkGray;
+            button4.Location = new Point(634, 23);
+            button4.Name = "button4";
+            button4.Size = new Size(138, 49);
+            button4.TabIndex = 6;
+            button4.Text = "Back";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // textBox1
             // 
@@ -109,33 +126,17 @@
             textBox2.Text = resources.GetString("textBox2.Text");
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
-            // button4
-            // 
-            button4.BackColor = Color.Transparent;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button4.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button4.ForeColor = Color.DarkGray;
-            button4.Location = new Point(634, 23);
-            button4.Name = "button4";
-            button4.Size = new Size(138, 49);
-            button4.TabIndex = 6;
-            button4.Text = "Back";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
-            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.лучник_характер;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(934, 511);
             Controls.Add(tabControl1);
             ForeColor = Color.Transparent;
             Name = "Form4";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form4";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);

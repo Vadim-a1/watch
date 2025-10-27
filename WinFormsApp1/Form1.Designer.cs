@@ -46,10 +46,10 @@
             tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(0, 0);
+            tabControl1.Location = new Point(-3, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(800, 450);
+            tabControl1.Size = new Size(963, 547);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -61,7 +61,7 @@
             tabPage1.Location = new Point(4, 27);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(792, 419);
+            tabPage1.Size = new Size(955, 516);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Характеристики";
             tabPage1.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button4.ForeColor = Color.DarkGray;
-            button4.Location = new Point(648, 23);
+            button4.Location = new Point(796, 11);
             button4.Name = "button4";
             button4.Size = new Size(138, 49);
             button4.TabIndex = 6;
@@ -107,7 +107,7 @@
             tabPage2.Location = new Point(4, 27);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(792, 419);
+            tabPage2.Size = new Size(955, 516);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "История персонажа";
             tabPage2.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Ink Free", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             textBox2.ForeColor = Color.Crimson;
-            textBox2.Location = new Point(13, 82);
+            textBox2.Location = new Point(82, 83);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(774, 179);
@@ -132,9 +132,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.маг_характер;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(960, 547);
             Controls.Add(tabControl1);
             Name = "mage_char";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "mage";
             Load += Form1_Load;
             tabControl1.ResumeLayout(false);

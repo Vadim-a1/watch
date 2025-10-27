@@ -117,13 +117,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Выбор_Персонажа_в_Храме;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(856, 511);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(label1);
             Name = "Form3";
+            StartPosition = FormStartPosition.CenterScreen;
             Load += Form3_Load;
             ResumeLayout(false);
             PerformLayout();
