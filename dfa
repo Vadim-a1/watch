@@ -1,0 +1,30 @@
+[33mcommit 01a662de84331284dae2516e0172cade4ef4083f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: VADIM <xxxvadimxxx25@list.ru>
+Date:   Sun Oct 5 12:51:52 2025 +0300
+
+    05.10
+
+[33mcommit 0108c6d068eaaab3ba0b11e003245d4a18452fc8[m
+Author: VADIM <xxxvadimxxx25@list.ru>
+Date:   Mon Sep 22 21:50:37 2025 +0300
+
+    test
+
+[33mcommit 4055acb2b7d880e9c051b0d0dcaf62e6279c750c[m
+Author: VADIM <xxxvadimxxx25@list.ru>
+Date:   Mon Sep 22 21:47:06 2025 +0300
+
+    last remake
+    123
+
+[33mcommit 9e5148c6ff0a7d8083c0b1269fec4ff3bb34e660[m
+Author: Вадим <Вадим@WIN-FB1QSD43R9Q>
+Date:   Tue Sep 16 21:52:45 2025 +0300
+
+    Добавьте файлы проекта.
+
+[33mcommit 11ee1a34c93a06cba5b6512bde99289dde61a75a[m
+Author: Вадим <Вадим@WIN-FB1QSD43R9Q>
+Date:   Tue Sep 16 21:52:42 2025 +0300
+
+    Добавить .gitattributes и .gitignore.
