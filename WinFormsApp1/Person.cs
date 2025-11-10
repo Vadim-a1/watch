@@ -23,24 +23,18 @@
         public virtual void TakeDamage(int damage)
         {
             Health = Math.Max(0, Health - damage);
-            Console.WriteLine($"{Name} получает {damage} урона. Здоровье: {Health}/{MaxHealth}");
 
-            if (!IsAlive)
-            {
-                Console.WriteLine($"{Name} повержен! 💀");
-            }
+            
         }
 
         public virtual void Attack(Person target)
         {
-            Console.WriteLine($"{Name} атакует {target.Name} и наносит {Damage} урона! ⚔️");
             target.TakeDamage(Damage);
         }
 
         public void Heal(int amount)
         {
             Health = Math.Min(MaxHealth, Health + amount);
-            Console.WriteLine($"{Name} восстанавливает {amount} здоровья. Теперь: {Health}/{MaxHealth}");
         }
     }
 }

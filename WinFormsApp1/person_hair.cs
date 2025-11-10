@@ -28,40 +28,6 @@ internal abstract class Warrior : Person
 }
 
 
-// Абстрактный класс лучника
-internal abstract class Archer : Person
-{
-    public int Arrows { get; protected set; }
-
-    public Archer(string name, int level = 1, int arrows = 15) : base(name, level)
-    {
-        Arrows = arrows;
-        MaxHealth = 90 + (level - 1) * 8;
-        Health = MaxHealth;
-        Damage = 8;
-    }
-
-    public void AddArrows(int count)
-    {
-        Arrows += count;
-        Console.WriteLine($"{Name} получил {count} стрел. Теперь всего: {Arrows}");
-    }
-
-    public override void Attack(Person target)
-    {
-        if (Arrows <= 0)
-        {
-            Console.WriteLine($"{Name} пытается выстрелить, но стрелы закончились!");
-            return;
-        }
-
-        Arrows--;
-        Console.WriteLine($"{Name} выпускает стрелу в {target.Name}! 🏹 Урон: {Damage} (Осталось стрел: {Arrows})");
-        target.TakeDamage(Damage);
-    }
-}
-
-
 
 // Абстрактный класс мага
 internal abstract class Mage : Person
