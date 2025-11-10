@@ -27,13 +27,7 @@ namespace WinFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            button1.FlatAppearance.BorderSize = 0;
-            button1.BackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Transparent; // Прозрачный фон при наведении
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent; // Прозрачный фон при нажатии
-        }
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -59,6 +53,32 @@ namespace WinFormsApp1
             Form f5 = new Form2();
             f5.Show();
             this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form f4 = new Form4();
+            f4.Show();
         }
     }
 }

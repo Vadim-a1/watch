@@ -20,7 +20,7 @@ namespace WinFormsApp1
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
@@ -52,7 +52,14 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form fight = new fight();
+            fight.Show();
+        }
+
     }
 }

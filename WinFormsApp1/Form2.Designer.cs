@@ -73,12 +73,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(729, 413);
             Controls.Add(button2);
             Controls.Add(button1);
+            DoubleBuffered = true;
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form2";
+            Text = "main_menu";
             Load += Form2_Load;
             ResumeLayout(false);
         }

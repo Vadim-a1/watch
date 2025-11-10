@@ -121,11 +121,17 @@
   <data name="лучник_характер1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\лучник_характер1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Выбор Персонажа в Храме" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Выбор Персонажа в Храме.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7aa9a61ba94e18cecf823ec06bd4823a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7aa9a61ba94e18cecf823ec06bd4823a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1afb6e31-9630-4f9a-aa5a-86dbb2ba4dde (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1afb6e31-9630-4f9a-aa5a-86dbb2ba4dde (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-beautiful-fantasy-game-button-ui-buttons-design-png-image_1740042" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-beautiful-fantasy-game-button-ui-buttons-design-png-image_1740042.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7f6ad581-5280-4b42-8750-b7a5abc620fb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7f6ad581-5280-4b42-8750-b7a5abc620fb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ГЛАВНЫЙ ФОН" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ГЛАВНЫЙ ФОН.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,14 +139,23 @@
   <data name="маг_характер1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\маг_характер1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="voin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1dcefdf18c1f8f48e37d85c67c950858" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1dcefdf18c1f8f48e37d85c67c950858.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1dcefdf18c1f8f48e37d85c67c9508581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1dcefdf18c1f8f48e37d85c67c9508581.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="trine-wizard-warrior-hd-wizard-knight-and-archer-illustration-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trine-wizard-warrior-hd-wizard-knight-and-archer-illustration-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="маг_характер2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\маг_характер2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7f6ad581-5280-4b42-8750-b7a5abc620fb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7f6ad581-5280-4b42-8750-b7a5abc620fb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="b1f297f29906a5d297d4a2135baec857" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b1f297f29906a5d297d4a2135baec857.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1afb6e31-9630-4f9a-aa5a-86dbb2ba4dde (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1afb6e31-9630-4f9a-aa5a-86dbb2ba4dde (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +166,14 @@
   <data name="лучник_характер" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\лучник_характер.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="маг" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\маг.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\p.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-beautiful-fantasy-game-button-ui-buttons-design-png-image_1740042" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-beautiful-fantasy-game-button-ui-buttons-design-png-image_1740042.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="p1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\p1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,7 +181,7 @@
   <data name="c68048bc-4502-413b-8ebd-c7c25241ba09" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c68048bc-4502-413b-8ebd-c7c25241ba09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Выбор Персонажа в Храме" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Выбор Персонажа в Храме.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-black-and-white-ghost-artwork-png-image_13664775" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-black-and-white-ghost-artwork-png-image_13664775.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

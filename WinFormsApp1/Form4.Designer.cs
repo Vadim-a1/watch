@@ -31,12 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            pictureBox2 = new PictureBox();
             button4 = new Button();
             textBox1 = new TextBox();
             tabPage2 = new TabPage();
             textBox2 = new TextBox();
+            button1 = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabPage2.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,8 +57,11 @@
             // 
             // tabPage1
             // 
+            tabPage1.BackColor = Color.Transparent;
             tabPage1.BackgroundImage = (Image)resources.GetObject("tabPage1.BackgroundImage");
-            tabPage1.BackgroundImageLayout = ImageLayout.Stretch;
+            tabPage1.BackgroundImageLayout = ImageLayout.None;
+            tabPage1.Controls.Add(button1);
+            tabPage1.Controls.Add(pictureBox2);
             tabPage1.Controls.Add(button4);
             tabPage1.Controls.Add(textBox1);
             tabPage1.Location = new Point(4, 27);
@@ -64,8 +70,18 @@
             tabPage1.Size = new Size(926, 480);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Характеристики";
-            tabPage1.UseVisualStyleBackColor = true;
             tabPage1.Click += tabPage1_Click_2;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = Properties.Resources.b1f297f29906a5d297d4a2135baec857;
+            pictureBox2.Location = new Point(312, 4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(385, 473);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
             // 
             // button4
             // 
@@ -76,7 +92,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button4.ForeColor = Color.DarkGray;
-            button4.Location = new Point(634, 23);
+            button4.Location = new Point(761, 23);
             button4.Name = "button4";
             button4.Size = new Size(138, 49);
             button4.TabIndex = 6;
@@ -107,7 +123,7 @@
             tabPage2.Location = new Point(4, 27);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(792, 419);
+            tabPage2.Size = new Size(926, 480);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "История персонажа";
             tabPage2.UseVisualStyleBackColor = true;
@@ -118,13 +134,30 @@
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Ink Free", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             textBox2.ForeColor = Color.Crimson;
-            textBox2.Location = new Point(13, 82);
+            textBox2.Location = new Point(58, 83);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(774, 179);
+            textBox2.Size = new Size(774, 177);
             textBox2.TabIndex = 2;
             textBox2.Text = resources.GetString("textBox2.Text");
             textBox2.TextAlign = HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button1.ForeColor = Color.DarkGray;
+            button1.Location = new Point(703, 89);
+            button1.Name = "button1";
+            button1.Size = new Size(206, 49);
+            button1.TabIndex = 10;
+            button1.Text = "Continue";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form4
             // 
@@ -137,10 +170,11 @@
             ForeColor = Color.Transparent;
             Name = "Form4";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form4";
+            Text = "character";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
             ResumeLayout(false);
@@ -154,5 +188,7 @@
         private TabPage tabPage2;
         private TextBox textBox2;
         private Button button4;
+        private PictureBox pictureBox2;
+        private Button button1;
     }
 }

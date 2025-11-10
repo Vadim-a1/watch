@@ -83,9 +83,49 @@ namespace WinFormsApp1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1dcefdf18c1f8f48e37d85c67c950858 {
+            get {
+                object obj = ResourceManager.GetObject("1dcefdf18c1f8f48e37d85c67c950858", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1dcefdf18c1f8f48e37d85c67c9508581 {
+            get {
+                object obj = ResourceManager.GetObject("1dcefdf18c1f8f48e37d85c67c9508581", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7aa9a61ba94e18cecf823ec06bd4823a {
+            get {
+                object obj = ResourceManager.GetObject("7aa9a61ba94e18cecf823ec06bd4823a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _7f6ad581_5280_4b42_8750_b7a5abc620fb {
             get {
                 object obj = ResourceManager.GetObject("7f6ad581-5280-4b42-8750-b7a5abc620fb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap b1f297f29906a5d297d4a2135baec857 {
+            get {
+                object obj = ResourceManager.GetObject("b1f297f29906a5d297d4a2135baec857", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +173,29 @@ namespace WinFormsApp1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_black_and_white_ghost_artwork_png_image_13664775 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-black-and-white-ghost-artwork-png-image_13664775", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap trine_wizard_warrior_hd_wizard_knight_and_archer_illustration_wallpaper_preview {
             get {
                 object obj = ResourceManager.GetObject("trine-wizard-warrior-hd-wizard-knight-and-archer-illustration-wallpaper-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap voin {
+            get {
+                object obj = ResourceManager.GetObject("voin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +236,16 @@ namespace WinFormsApp1.Properties {
         internal static System.Drawing.Bitmap лучник_характер1 {
             get {
                 object obj = ResourceManager.GetObject("лучник_характер1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap маг {
+            get {
+                object obj = ResourceManager.GetObject("маг", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
