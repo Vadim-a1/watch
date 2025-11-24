@@ -79,6 +79,7 @@ namespace WinFormsApp1
         {
             Form f4 = new Form4();
             f4.Show();
+            this.Hide();
         }
     }
 }

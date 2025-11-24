@@ -33,7 +33,9 @@
             progressBarHealth = new ProgressBar();
             progressBarMy = new ProgressBar();
             buttonDamage = new Button();
-            textBox1 = new TextBox();
+            label1 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -42,7 +44,7 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = Properties.Resources.b1f297f29906a5d297d4a2135baec857;
-            pictureBox2.Location = new Point(31, 148);
+            pictureBox2.Location = new Point(81, 158);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(210, 211);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -53,7 +55,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.pngtree_black_and_white_ghost_artwork_png_image_13664775;
-            pictureBox1.Location = new Point(536, 148);
+            pictureBox1.Location = new Point(634, 158);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(215, 211);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -62,52 +64,90 @@
             // 
             // progressBarHealth
             // 
-            progressBarHealth.Location = new Point(604, 375);
+            progressBarHealth.Location = new Point(692, 375);
             progressBarHealth.Name = "progressBarHealth";
             progressBarHealth.Size = new Size(100, 23);
             progressBarHealth.TabIndex = 11;
             // 
             // progressBarMy
             // 
-            progressBarMy.Location = new Point(87, 375);
+            progressBarMy.Location = new Point(133, 375);
             progressBarMy.Name = "progressBarMy";
             progressBarMy.Size = new Size(100, 23);
             progressBarMy.TabIndex = 12;
             // 
             // buttonDamage
             // 
-            buttonDamage.Location = new Point(363, 304);
+            buttonDamage.Location = new Point(433, 313);
             buttonDamage.Name = "buttonDamage";
-            buttonDamage.Size = new Size(75, 23);
+            buttonDamage.Size = new Size(95, 38);
             buttonDamage.TabIndex = 13;
-            buttonDamage.Text = "button1";
+            buttonDamage.Text = "ATTACK";
             buttonDamage.UseVisualStyleBackColor = true;
+            buttonDamage.Click += buttonDamage_Click_1;
             // 
-            // textBox1
+            // label1
             // 
-            textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox1.ForeColor = Color.IndianRed;
-            textBox1.Location = new Point(338, 199);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(122, 39);
-            textBox1.TabIndex = 14;
-            textBox1.TextAlign = HorizontalAlignment.Center;
-            textBox1.TextChanged += textBox1_TextChanged;
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label1.Location = new Point(272, 197);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 86);
+            label1.TabIndex = 15;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button1.ForeColor = Color.DarkGray;
+            button1.Location = new Point(625, 29);
+            button1.Name = "button1";
+            button1.Size = new Size(224, 49);
+            button1.TabIndex = 16;
+            button1.Text = "Обновить\r\n";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Transparent;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Arial", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button2.ForeColor = Color.DarkGray;
+            button2.Location = new Point(12, 29);
+            button2.Name = "button2";
+            button2.Size = new Size(350, 49);
+            button2.TabIndex = 17;
+            button2.Text = "Выход\r\n\r\n";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // fight
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._7aa9a61ba94e18cecf823ec06bd4823a;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(918, 510);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label1);
             Controls.Add(buttonDamage);
             Controls.Add(progressBarMy);
             Controls.Add(progressBarHealth);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Name = "fight";
-            Text = "Form5";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "S";
             Load += fight_Load_1;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -122,6 +162,8 @@
         private ProgressBar progressBarHealth;
         private ProgressBar progressBarMy;
         private Button buttonDamage;
-        private TextBox textBox1;
+        private Label label1;
+        private Button button1;
+        private Button button2;
     }
 }
