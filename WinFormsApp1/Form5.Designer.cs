@@ -28,95 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboType = new System.Windows.Forms.ComboBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.listSquad = new System.Windows.Forms.ListBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnRemove = new System.Windows.Forms.Button();
-            this.btnSort = new System.Windows.Forms.Button();
-            this.btnFilter = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            comboType = new ComboBox();
+            txtName = new TextBox();
+            listSquad = new ListBox();
+            btnAdd = new Button();
+            btnRemove = new Button();
+            btnSort = new Button();
+            numLevel = new NumericUpDown();
+            btnRandom = new Button();
+            ((System.ComponentModel.ISupportInitialize)numLevel).BeginInit();
+            SuspendLayout();
             // 
             // comboType
             // 
-            this.comboType.FormattingEnabled = true;
-            this.comboType.Location = new System.Drawing.Point(12, 12);
-            this.comboType.Name = "comboType";
-            this.comboType.Size = new System.Drawing.Size(121, 23);
-            this.comboType.TabIndex = 0;
+            comboType.FormattingEnabled = true;
+            comboType.Location = new Point(12, 12);
+            comboType.Name = "comboType";
+            comboType.Size = new Size(121, 23);
+            comboType.TabIndex = 0;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(150, 12);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(200, 23);
-            this.txtName.TabIndex = 1;
+            txtName.Location = new Point(150, 12);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(120, 23);
+            txtName.TabIndex = 1;
             // 
             // listSquad
             // 
-            this.listSquad.FormattingEnabled = true;
-            this.listSquad.ItemHeight = 15;
-            this.listSquad.Location = new System.Drawing.Point(12, 50);
-            this.listSquad.Name = "listSquad";
-            this.listSquad.Size = new System.Drawing.Size(338, 214);
-            this.listSquad.TabIndex = 2;
+            listSquad.FormattingEnabled = true;
+            listSquad.ItemHeight = 15;
+            listSquad.Location = new Point(12, 50);
+            listSquad.Name = "listSquad";
+            listSquad.Size = new Size(338, 214);
+            listSquad.TabIndex = 2;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(370, 12);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 3;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Location = new Point(370, 12);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(75, 23);
+            btnAdd.TabIndex = 3;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(370, 50);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(75, 23);
-            this.btnRemove.TabIndex = 4;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            btnRemove.Location = new Point(370, 50);
+            btnRemove.Name = "btnRemove";
+            btnRemove.Size = new Size(75, 23);
+            btnRemove.TabIndex = 4;
+            btnRemove.Text = "Remove";
+            btnRemove.UseVisualStyleBackColor = true;
+            btnRemove.Click += btnRemove_Click;
             // 
             // btnSort
             // 
-            this.btnSort.Location = new System.Drawing.Point(370, 90);
-            this.btnSort.Name = "btnSort";
-            this.btnSort.Size = new System.Drawing.Size(75, 23);
-            this.btnSort.TabIndex = 5;
-            this.btnSort.Text = "Sort";
-            this.btnSort.UseVisualStyleBackColor = true;
-            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
+            btnSort.Location = new Point(370, 90);
+            btnSort.Name = "btnSort";
+            btnSort.Size = new Size(75, 23);
+            btnSort.TabIndex = 5;
+            btnSort.Text = "Sort";
+            btnSort.UseVisualStyleBackColor = true;
+            btnSort.Click += btnSort_Click;
             // 
-            // btnFilter
+            // numLevel
             // 
-            this.btnFilter.Location = new System.Drawing.Point(370, 130);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(75, 23);
-            this.btnFilter.TabIndex = 6;
-            this.btnFilter.Text = "Filter";
-            this.btnFilter.UseVisualStyleBackColor = true;
-            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            numLevel.Location = new Point(280, 12);
+            numLevel.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numLevel.Name = "numLevel";
+            numLevel.Size = new Size(70, 23);
+            numLevel.TabIndex = 7;
+            numLevel.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // btnRandom
+            // 
+            btnRandom.Location = new Point(370, 129);
+            btnRandom.Name = "btnRandom";
+            btnRandom.Size = new Size(75, 23);
+            btnRandom.TabIndex = 8;
+            btnRandom.Text = "Random";
+            btnRandom.UseVisualStyleBackColor = true;
+            btnRandom.Click += btnRandom_Click;
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 281);
-            this.Controls.Add(this.btnFilter);
-            this.Controls.Add(this.btnSort);
-            this.Controls.Add(this.btnRemove);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.listSquad);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.comboType);
-            this.Name = "Form5";
-            this.Text = "Squad Manager";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(484, 281);
+            Controls.Add(btnRandom);
+            Controls.Add(numLevel);
+            Controls.Add(btnSort);
+            Controls.Add(btnRemove);
+            Controls.Add(btnAdd);
+            Controls.Add(listSquad);
+            Controls.Add(txtName);
+            Controls.Add(comboType);
+            Name = "Form5";
+            Text = "Squad Manager";
+            ((System.ComponentModel.ISupportInitialize)numLevel).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -128,6 +141,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnSort;
-        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.NumericUpDown numLevel;
+        private System.Windows.Forms.Button btnRandom;
     }
 }

@@ -6,6 +6,7 @@ namespace WinFormsApp1
     internal partial class Form5 : Form
     {
         private SquadManager squadManager = new SquadManager();
+        private Random _rand = new Random();
 
         public Form5()
         {
@@ -27,14 +28,29 @@ namespace WinFormsApp1
                 return;
             }
 
+            int level = (int)numLevel.Value; // Получаем уровень из NumericUpDown
+
             Person person;
             if (comboType.SelectedItem.ToString() == "Warrior")
-                person = new ConcreteWarrior(name);
+                person = new ConcreteWarrior(name, level);
             else
-                person = new Archer(name);
+                person = new Archer(name, level);
 
             squadManager.AddPerson(person);
             RefreshSquadList();
+        }
+
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+            // Простая рандомизация имени
+            string[] prefixes = { "Ar", "Bel", "Cor", "Dor", "Eli", "Fin", "Gor", "Hal" };
+            string[] suffixes = { "on", "en", "ar", "is", "us", "a", "or", "ik" };
+
+            string name = prefixes[_rand.Next(prefixes.Length)] + suffixes[_rand.Next(suffixes.Length)];
+            int level = _rand.Next(1, 21); // уровень от 1 до 20
+
+            txtName.Text = name;
+            numLevel.Value = level;
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -56,15 +72,7 @@ namespace WinFormsApp1
             RefreshSquadList();
         }
 
-        private void btnFilter_Click(object sender, EventArgs e)
-        {
-            string type = comboType.SelectedItem.ToString();
-
-            if (type == "Warrior")
-                squadManager.FilterByType<ConcreteWarrior>();
-            else
-                squadManager.FilterByType<Archer>();
-        }
+        
 
         private void RefreshSquadList()
         {
@@ -78,7 +86,7 @@ namespace WinFormsApp1
 
     internal class ConcreteWarrior : Warrior
     {
-        public ConcreteWarrior(string name) : base(name) { }
+        public ConcreteWarrior(string name, int level = 1) : base(name, level) { }
 
         public override void UseSpecialAbility()
         {

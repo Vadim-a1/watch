@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class SquadForm
+    partial class SquadForm : System.Windows.Forms.Form
     {
         /// <summary>
         /// Required designer variable.
