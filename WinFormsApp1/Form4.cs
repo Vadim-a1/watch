@@ -54,6 +54,7 @@ namespace WinFormsApp1
         {
             Form fight = new fight();
             fight.Show();
+            this.Hide();
         }
     }
 }

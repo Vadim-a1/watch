@@ -13,18 +13,6 @@ internal abstract class Warrior : Person
         Health = MaxHealth;
         Damage = 7;
     }
-
-    public void Block()
-    {
-        Console.WriteLine($"{Name} поднимает щит и блокирует часть урона! 🛡️");
-    }
-
-    public override void TakeDamage(int damage)
-    {
-        int reducedDamage = Math.Max(1, damage - Armor);
-        Console.WriteLine($"Броня поглощает часть урона! Входящий урон: {damage} -> {reducedDamage}");
-        base.TakeDamage(reducedDamage);
-    }
 }
 
 
@@ -44,24 +32,9 @@ internal abstract class Mage : Person
         Damage = 6;
     }
 
-    public void CastSpell(Person target)
-    {
-        if (Mana >= 10)
-        {
-            Mana -= 10;
-            int spellDamage = Damage + 15 + Level;
-            Console.WriteLine($"{Name} использует магию против {target.Name}! 🔥 Урон: {spellDamage} (Осталось маны: {Mana})");
-            target.TakeDamage(spellDamage);
-        }
-        else
-        {
-            Console.WriteLine($"{Name} не хватает маны для заклинания!");
-        }
-    }
 
     public void RestoreMana(int amount)
     {
         Mana = Math.Min(Mana + amount, MaxMana);
-        Console.WriteLine($"{Name} восстановил {amount} маны. Теперь: {Mana}/{MaxMana}");
     }
 }
