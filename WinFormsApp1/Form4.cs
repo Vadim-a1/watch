@@ -56,5 +56,4 @@ namespace WinFormsApp1
             fight.Show();
             this.Hide();
         }
-    }
-}
+    }}

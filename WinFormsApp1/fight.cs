@@ -85,8 +85,10 @@ namespace WinFormsApp1
 
         private void buttonDamage_Click_1(object sender, EventArgs e)
         {
-            SoundPlayer hit = new SoundPlayer(@"C:\Users\Вадим\Downloads\impact-sound.wav");
-            hit.Play();
+            //SoundPlayer hit = new SoundPlayer(@"C:\Users\Вадим\Downloads\impact-sound.wav");
+            //hit.Play();
+            Form5 f5 = new Form5();
+            f5.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
