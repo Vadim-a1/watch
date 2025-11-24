@@ -29,11 +29,15 @@ internal class SquadManager
         }
     }
 
-    // Сортировка по уровню
-    public void SortByLevel()
+    // Исправление: Добавлен параметр descending для сортировки по уровню
+    public void SortByLevel(bool descending = false)
     {
-        squad = squad.OrderBy(p => p.Level).ToList();
-        Console.WriteLine("Отряд отсортирован по уровню.");
+        if (descending)
+            squad = squad.OrderByDescending(p => p.Level).ThenBy(p => p.Name).ToList();
+        else
+            squad = squad.OrderBy(p => p.Level).ThenBy(p => p.Name).ToList();
+
+        Console.WriteLine($"Отряд отсортирован по уровню {(descending ? "(убывание)" : "(возрастание)")}.");
     }
 
     // Исправление: Явно приводим person к типу Person, чтобы получить доступ к свойствам Name и Level

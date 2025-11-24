@@ -14,19 +14,15 @@
             Name = name;
             Level = level;
         }
+
         public void Heal(int amount)
         {
             Health = Math.Min(MaxHealth, Health + amount);
         }
 
-
         // Абстрактный метод - должен быть реализован в наследниках
         public abstract void UseSpecialAbility();
         public abstract void TakeDamage(int damage);
         public abstract void Attack(IDamageable target);
-        
-        
-
-        
     }
 }
