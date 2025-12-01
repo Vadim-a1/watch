@@ -72,7 +72,7 @@ namespace WinFormsApp1
             RefreshSquadList();
         }
 
-        
+
 
         private void RefreshSquadList()
         {
@@ -81,6 +81,13 @@ namespace WinFormsApp1
             {
                 listSquad.Items.Add($"{person.Name} (Тип: {person.GetType().Name}, Уровень: {person.Level}, Здоровье: {person.Health})");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form fight = new fight();
+            fight.Show();
+            this.Hide();
         }
     }
 
