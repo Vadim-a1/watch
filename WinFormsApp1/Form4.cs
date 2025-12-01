@@ -52,8 +52,8 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form fight = new fight();
-            fight.Show();
+            Form f5 = new Form5();
+            f5.Show();
             this.Hide();
         }
     }}

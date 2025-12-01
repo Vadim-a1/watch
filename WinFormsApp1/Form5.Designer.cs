@@ -36,6 +36,7 @@
             btnSort = new Button();
             numLevel = new NumericUpDown();
             btnRandom = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)numLevel).BeginInit();
             SuspendLayout();
             // 
@@ -112,11 +113,23 @@
             btnRandom.UseVisualStyleBackColor = true;
             btnRandom.Click += btnRandom_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(370, 241);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 9;
+            button1.Text = "Next";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(484, 281);
+            Controls.Add(button1);
             Controls.Add(btnRandom);
             Controls.Add(numLevel);
             Controls.Add(btnSort);
@@ -143,5 +156,6 @@
         private System.Windows.Forms.Button btnSort;
         private System.Windows.Forms.NumericUpDown numLevel;
         private System.Windows.Forms.Button btnRandom;
+        private Button button1;
     }
 }
